@@ -21,7 +21,7 @@ public class QueneTest {
 						+ "\n5. Display all jobs"
 						+ "\n6. Quit the program");
 				if(number == 1) {
-					System.out.println("Enter your job: ");
+					System.out.println("Enter your job details: ");
 					jobName = scanner2.nextLine();
 					queue1.enqueue(jobName);
 				}
