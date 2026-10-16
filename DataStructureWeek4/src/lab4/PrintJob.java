@@ -16,8 +16,8 @@ public class PrintJob {
 	
 	public String toString() {
 		return "Member: " + this.members +
-				"\nID: " + this.id +
-				"\nDocument Name: " + this.doc_name +
-				"\nPages: " + this.pages;
+				" ID: " + this.id +
+				" Document Name: " + this.doc_name +
+				" Pages: " + this.pages;
 	}
 }

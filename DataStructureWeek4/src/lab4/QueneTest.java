@@ -13,13 +13,16 @@ public class QueneTest {
 		//int loopCount = 0;
 		
 		//sample data
+		/*
 		queue1.enqueue("milk");
 		queue1.enqueue("egg");
 		queue1.enqueue("fish");
 		
+		queue1.displayQueue();
+		*/
 		//System.out.print(queue1.peek());
 		
-		/*
+		
 		while(number != 6) {
 			
 				System.out.println("Welcome to PrintServer! Please select a number from the list: "
@@ -68,11 +71,12 @@ public class QueneTest {
 					queue1.dequeueAll();
 				}
 				else if(number == 5) {
-					queue1.displayQueue(); 
+					queue1.displayQueue();
+					System.out.println("");
 				}
 
 			}//End of while loop
-			*/
+			
 			System.out.println("End");
 
 	}

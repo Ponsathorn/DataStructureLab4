@@ -66,10 +66,12 @@ public class QueueArrayBased implements QueueInterface {
    
   
   public void displayQueue() {
+	  System.out.print("Front < ");
 	  for(int x = 0; x < count; x++) {
-		  front = (front + 1)% MAX_QUEUE;
-		  -- count;
+		  int index = (front + x)% MAX_QUEUE;
+		  System.out.print(items[index] + " ");
 	  };
+	  System.out.print(" > Back ");
   }
   
   
