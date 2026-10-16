@@ -64,4 +64,17 @@ public class QueueArrayBased implements QueueInterface {
     }  // end if
   }  // end peek
    
+  
+  public void displayQueue() {
+	  for(int x = 0; x < count; x++) {
+		  front = (front + 1)% MAX_QUEUE;
+		  -- count;
+	  };
+  }
+  
+  
+  
+  
+  
+  	
 } // end QueueArrayBased

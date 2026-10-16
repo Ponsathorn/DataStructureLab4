@@ -5,13 +5,21 @@ public class QueneTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		QueueArrayBased queue1 = new QueueArrayBased();
-		//PrintJob myJob = new PrintJob(null, 0, null, 0);
+		//System.out.println("Type anything to start");
 		Scanner scanner = new Scanner(System.in);
 		//Scanner scanner2 = new Scanner(System.in);
 		int number = 0;
-		
+		//scanner.nextLine();
 		//int loopCount = 0;
 		
+		//sample data
+		queue1.enqueue("milk");
+		queue1.enqueue("egg");
+		queue1.enqueue("fish");
+		
+		//System.out.print(queue1.peek());
+		
+		/*
 		while(number != 6) {
 			
 				System.out.println("Welcome to PrintServer! Please select a number from the list: "
@@ -21,19 +29,27 @@ public class QueneTest {
 						+ "\n4. Empty the queue"
 						+ "\n5. Display all jobs"
 						+ "\n6. Quit the program");
+				
+				System.out.print("\nEnter your choice: ");
+				number = scanner.nextInt();
+				scanner.nextLine();
+				
 				if(number == 1) {
 					System.out.println("Job details");
-					System.out.println("Enter your members: ");
+					System.out.print("\nEnter your members: ");
 					String members = scanner.nextLine();
+					//System.out.print("");
 					
-					System.out.println("Enter your members: ");
+					System.out.print("\nEnter your ID: ");
 					int id = scanner.nextInt();
+					scanner.nextLine();
 					
-					System.out.println("Enter your members: ");
+					System.out.print("\nEnter your Document Name: ");
 					String doc_name = scanner.nextLine();
 					
-					System.out.println("Enter your members: ");
+					System.out.print("\nEnter your pages: ");
 					int pages = scanner.nextInt();
+					scanner.nextLine();
 					
 					PrintJob myJob = new PrintJob(members, id, doc_name, pages);
 					
@@ -45,19 +61,18 @@ public class QueneTest {
 				}
 				
 				else if(number == 3) {
-					queue1.peek();
+					System.out.println(queue1.peek());
 				}
 				
 				else if(number == 4) {
 					queue1.dequeueAll();
 				}
 				else if(number == 5) {
-					//queue1.displayQueue(); 
+					queue1.displayQueue(); 
 				}
-				
-			number = scanner.nextInt();
+
 			}//End of while loop
-		
+			*/
 			System.out.println("End");
 
 	}
